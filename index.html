@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Productos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        @import url(css/index.css);
+    </style>
+    <script src="js/index.js"></script>
 </head>
+
 <body>
-    <a href="products.html">Products</a>
+    <nav>
+        <a href="demos/index.html">Demos de CSS</a>
+    </nav>
+    <header>
+        <h1>Búsqueda de productos</h1>
+    </header>
+    <main>
+        <form id="fFilter" style="display: flex; flex-direction: column; gap: 10px;" >
+            <input id="iFilter" type="search" placeholder="Digite aquí ..." 
+            required/>
+            <span message="Se requiere filtro"></span>
+            <!-- <input type="number" step="0.1" />
+            <input type="date" />
+            <input type="checkbox" /> -->
+            <button>Buscar</button>
+        </form>
+        <hr>
+        <ul id="results"></ul>
+    </main>
 </body>
+
 </html>
